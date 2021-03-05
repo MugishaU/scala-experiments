@@ -1,20 +1,16 @@
 package model
 
-final case class Item (
-                        name: String,
-                        category: String,
-                        price: Int,
-                        essentialStatus: Boolean
-                      )
+import java.util.Date
 
-final case class ItemSelection (item: Item, quantity: Int)
+final case class ItemSelection(
+    itemId: String,
+    quantity: Int
+)
 
-final case class ShoppingCart (
-                              id: String, //todo UUID???
-                              customerId: String,
-                              itemSelections: Option[List[ItemSelection]],
-                              deliverySlot: Option[DeliverySlot],
-                              deliveryCost: Option[Int],
-                              deliveryStatus: String, // todo should this be its own case class?
-                              totalCost: Int
-                              )
+final case class ShoppingCart(
+    id: String,
+    customerId: String,
+    cartSelections: Option[List[ItemSelection]],
+    cartCost: Int,
+    lastActive: Date
+)
