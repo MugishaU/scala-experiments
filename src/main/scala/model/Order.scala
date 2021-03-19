@@ -4,7 +4,8 @@ import java.util.Date
 
 final case class DeliverySlot(
     date: Date,
-    hour: Int
+    hour: Int,
+    availability: DeliverySlotStatus
 )
 
 final case class Delivery(
@@ -32,3 +33,8 @@ case object OutForDelivery extends OrderStatus
 case object OrderDelivered extends OrderStatus
 case object OrderCollected extends OrderStatus
 case object OrderFailed extends OrderStatus
+case object OrderCancelled extends OrderStatus
+
+sealed trait DeliverySlotStatus //todo extend all options
+case object Available extends DeliverySlotStatus
+case object Booked extends DeliverySlotStatus

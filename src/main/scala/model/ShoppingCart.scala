@@ -10,7 +10,7 @@ final case class ItemSelection(
 final case class ShoppingCart(
     id: String,
     customerId: String,
-    cartSelections: Option[List[ItemSelection]],
+    cartSelections: List[ItemSelection],
     cartCost: Int,
     lastActive: Date
 )

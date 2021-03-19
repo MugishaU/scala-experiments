@@ -18,8 +18,9 @@ case object Drinks extends ItemCategory
 case object Dairy extends ItemCategory
 case object CannedGoods extends ItemCategory
 case object FruitAndVeg extends ItemCategory
-case object MeatandFish extends ItemCategory
+case object MeatAndFish extends ItemCategory
 case object PersonalCare extends ItemCategory
 case object Confectionary extends ItemCategory
 case object GrainsAndPasta extends ItemCategory
 case object CleaningProducts extends ItemCategory
+case object Miscellaneous extends ItemCategory
