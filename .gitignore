@@ -24,4 +24,5 @@ target
 out
 .DS_Store
 
+.bsp
 credentials
