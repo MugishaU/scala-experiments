@@ -23,3 +23,5 @@ target
 .idea
 out
 .DS_Store
+
+credentials
